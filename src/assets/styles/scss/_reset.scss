@@ -6,10 +6,18 @@ html {
 
 body {
     font-size: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0px auto;
+}
 a {
     cursor: pointer;
     text-decoration: none;
