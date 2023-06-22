@@ -1,0 +1,81 @@
+.nft-world {
+    background-color: #D9E0EC33;
+    padding: 50px 0;
+}
+
+.nft-world__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nft-world__left {
+    flex-shrink: 1;
+    width: calc(100% / 3 - 30px);
+
+}
+
+.nft-world__header--left {
+    font-family: "Bebas Neue", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.nft-world__middle {
+    position: relative;
+    flex-shrink: 1;
+    width: calc(100% / 3 - 30px);
+}
+
+.nft-world__header--middle {
+    font-family: "Bebas Neue", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+}
+
+.nft-world__paragaph--middle {
+    font-family: "Roboto Condensed", serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+.nft-world__right {
+    position: relative;
+    flex-shrink: 1;
+    width: calc(100% / 3 - 30px);
+}
+
+.nft-world__header--right {
+    font-family: "Bebas Neue", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.nft-world__paragraph--right {
+    font-family: "Roboto Condensed", serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.nft-world__image--middle {
+    position: absolute;
+    top: 10%;
+    left: -13%;
+
+}
+
+.nft-world__image--right {
+    position: absolute;
+    top: 10%;
+    left: -13%;
+}

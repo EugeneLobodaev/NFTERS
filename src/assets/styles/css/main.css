@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital@1&display=swap");
 html {
   text-decoration: none;
   list-style: none;
@@ -14,12 +15,6 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   max-width: 1170px;
   padding: 0 15px;
   margin: 0px auto;
@@ -74,6 +69,11 @@ a {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: white;
   padding: 20px 0px;
   border-bottom: 1px solid var(--border-color-1);
@@ -83,13 +83,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 1170px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .nav-menu {
@@ -97,6 +95,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -105,7 +105,7 @@ a {
 }
 
 .nav-menu__item {
-  font-family: sans-serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -132,15 +132,10 @@ a {
 }
 
 .search__image {
-  width: 30px;
-  padding: 0;
-  margin: 0;
-  text-align: center;
   cursor: pointer;
   background-color: transparent;
   border: 0px;
   position: absolute;
-  width: 25px;
   left: 88%;
   bottom: 20%;
 }
@@ -157,19 +152,36 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 57px;
   max-height: 440px;
   padding-top: 0;
+  padding-bottom: 65px;
+  margin-bottom: 50px;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0px auto;
 }
 
 .about-info {
   position: relative;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   z-index: 1;
   width: calc(50% - 30px);
   margin-right: 95px;
 }
 
 .about-info__header {
+  font-family: "Bebas Neue", serif;
   font-size: 3rem;
   font-weight: 400;
   text-align: left;
@@ -179,6 +191,7 @@ a {
 }
 
 .about-info__paragraph {
+  font-family: "Roboto Condensed", serif;
   color: #565656;
   font-size: 1.5rem;
   font-weight: 400;
@@ -188,6 +201,7 @@ a {
 }
 
 .about-info__stats {
+  font-family: "Bebas Neue", serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +241,8 @@ a {
 .about-images {
   width: calc(50% - 30px);
   position: relative;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,4 +376,89 @@ a {
 
 .about-images__icon {
   position: absolute;
+}
+
+.nft-world {
+  background-color: rgba(217, 224, 236, 0.2);
+  padding: 50px 0;
+}
+
+.nft-world__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.nft-world__left {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: calc(33.3333333333% - 30px);
+}
+
+.nft-world__header--left {
+  font-family: "Bebas Neue", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 0;
+}
+
+.nft-world__middle {
+  position: relative;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: calc(33.3333333333% - 30px);
+}
+
+.nft-world__header--middle {
+  font-family: "Bebas Neue", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.nft-world__paragaph--middle {
+  font-family: "Roboto Condensed", serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.nft-world__right {
+  position: relative;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: calc(33.3333333333% - 30px);
+}
+
+.nft-world__header--right {
+  font-family: "Bebas Neue", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.nft-world__paragraph--right {
+  font-family: "Roboto Condensed", serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.nft-world__image--middle {
+  position: absolute;
+  top: 10%;
+  left: -13%;
+}
+
+.nft-world__image--right {
+  position: absolute;
+  top: 10%;
+  left: -13%;
 }
