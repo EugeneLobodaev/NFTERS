@@ -14,12 +14,6 @@ body {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0px auto;
-}
-
 a {
   cursor: pointer;
   text-decoration: none;
@@ -381,6 +375,7 @@ a {
 .nft-world {
   background-color: rgba(217, 224, 236, 0.2);
   padding: 50px 0;
+  margin-bottom: 50px;
 }
 
 .nft-world__container {
@@ -461,4 +456,286 @@ a {
   position: absolute;
   top: 10%;
   left: -13%;
+}
+
+.nft-bids {
+  padding-bottom: 100px;
+}
+
+.nft-bids__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+
+.bids__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bids-wrapper__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bids__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.profile-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-name {
+  font-family: "Roboto Condensed", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.stock {
+  font-family: "Roboto Condensed", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.1rem;
+  margin: 0;
+}
+
+.bids__highest-bid {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.bid-header {
+  margin: 0;
+  font-family: serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.bid {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.bid-value {
+  font-family: serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bid-icon {
+  margin-right: 10px;
+}
+
+.bids__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.bid-placer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bidder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+.bidder-warper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.bid-name {
+  font-family: serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.bid-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.current-bid {
+  padding: 5px 5px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 10px;
+  font-family: serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bid-position {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.bids__right {
+  padding-left: 30px;
+  border-left: 1px solid #F0F0F0;
+  width: calc(33.3333333333% - 90px);
+}
+
+.top-collections {
+  font-family: "Roboto Condensed", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.top-collections__subtext {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #3D00B7;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.top-collections__list {
+  padding: 0;
+}
+
+.bids-warper--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-collections__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #F0F0F0;
+  margin-left: 30px;
+  gap: 25px;
+}
+
+.bidder-name {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.top-collections__bid {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #636363;
+  margin-top: 8px;
+}
+
+.bid-percentage {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #14C8B0;
+}
+
+.top-collections__items:nth-child(3n+2) .bid-percentage {
+  color: red;
 }
