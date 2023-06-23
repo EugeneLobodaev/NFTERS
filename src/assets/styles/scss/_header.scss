@@ -16,10 +16,18 @@
 .nav-menu {
     list-style: none;
     display: flex;
-    flex-shrink: 1;
     gap: 30px;
     align-items: center;
     padding: 0;
+}
+
+.logo {
+    font-family: "Bebas Neue", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #3D00B7;
+
 }
 
 .nav-menu__item {

@@ -30,7 +30,7 @@ a {
   text-align: left;
   background-color: var(--button-color-1);
   border-radius: 60px;
-  padding: 11px 42px;
+  padding: 15px 50px;
   border: 0px;
   cursor: pointer;
 }
@@ -49,7 +49,7 @@ a {
   text-align: left;
   background-color: transparent;
   border-radius: 60px;
-  padding: 11px 42px;
+  padding: 15px 50px;
   border: 1px solid var(--button-color-1);
   cursor: pointer;
 }
@@ -89,13 +89,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
   gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
+}
+
+.logo {
+  font-family: "Bebas Neue", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #3D00B7;
 }
 
 .nav-menu__item {
@@ -468,7 +474,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   max-width: 1170px;
   padding: 0 15px;
   margin: 0px auto;

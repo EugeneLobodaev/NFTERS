@@ -5,7 +5,7 @@
 .nft-bids__container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     max-width: 1170px;
     padding: 0 15px;
     margin: 0px auto;
@@ -139,8 +139,6 @@
     line-height: 1.5;
 
 }
-
-.current-bid__value {}
 
 .bid-position {
     font-family: sans-serif;
