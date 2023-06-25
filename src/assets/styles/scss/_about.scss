@@ -10,9 +10,9 @@
 
 .about__container {
     display: flex;
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0px auto;
+    @include container;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .about-info {
@@ -41,6 +41,8 @@
     line-height: 1.5;
     text-align: left;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 20;
 }
 
 .about-info__stats {
@@ -74,7 +76,7 @@
 
 .about-info__background {
     position: absolute;
-    z-index: auto;
+    z-index: 1;
     left: -12%;
     top: 60%;
 }
@@ -124,6 +126,8 @@
 
 .about-images__stats {
     display: flex;
+    position: absolute;
+    bottom: 0;
     justify-content: space-evenly;
     width: 70%;
     border: 0px solid transparent;
@@ -178,12 +182,16 @@
 
 .about-images--layer3 {
     position: absolute;
+    width: 50%;
+    height: auto;
     left: 28%;
     top: 10%;
     z-index: 1;
 }
 
 .about-images--layer2 {
+    width: 60%;
+    height: auto;
     position: absolute;
     left: 15%;
     top: 5%;
@@ -193,16 +201,20 @@
 
 .about-images--layer1 {
     position: absolute;
+    width: 70%;
+    height: auto;
     z-index: 3;
 }
 
 .about-images--compass {
     position: absolute;
-    display: none;
-    z-index: 4;
+    top: 35%;
+    left: -15%;
+    z-index: 5;
+    width: 28%;
+    height: auto;
 }
 
 .about-images__icon {
     position: absolute;
-    // display: none;
 }

@@ -20,6 +20,17 @@ a {
   color: black;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+}
+
 .button-type-1 {
   position: relative;
   z-index: 90;
@@ -30,7 +41,7 @@ a {
   text-align: left;
   background-color: var(--button-color-1);
   border-radius: 60px;
-  padding: 15px 50px;
+  padding: 1rem 2.5rem;
   border: 0px;
   cursor: pointer;
 }
@@ -49,7 +60,7 @@ a {
   text-align: left;
   background-color: transparent;
   border-radius: 60px;
-  padding: 15px 50px;
+  padding: 1rem 2.5rem;
   border: 1px solid var(--button-color-1);
   cursor: pointer;
 }
@@ -66,22 +77,25 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
   background-color: white;
   padding: 20px 0px;
   border-bottom: 1px solid var(--border-color-1);
 }
 
 .nav {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1170px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px;
 }
 
 .nav-menu {
@@ -168,7 +182,11 @@ a {
   display: flex;
   max-width: 1170px;
   padding: 0 15px;
-  margin: 0px auto;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
 }
 
 .about-info {
@@ -198,6 +216,8 @@ a {
   line-height: 1.5;
   text-align: left;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 20;
 }
 
 .about-info__stats {
@@ -233,7 +253,7 @@ a {
 
 .about-info__background {
   position: absolute;
-  z-index: auto;
+  z-index: 1;
   left: -12%;
   top: 60%;
 }
@@ -294,6 +314,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 0;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -351,12 +373,16 @@ a {
 
 .about-images--layer3 {
   position: absolute;
+  width: 50%;
+  height: auto;
   left: 28%;
   top: 10%;
   z-index: 1;
 }
 
 .about-images--layer2 {
+  width: 60%;
+  height: auto;
   position: absolute;
   left: 15%;
   top: 5%;
@@ -365,13 +391,18 @@ a {
 
 .about-images--layer1 {
   position: absolute;
+  width: 70%;
+  height: auto;
   z-index: 3;
 }
 
 .about-images--compass {
   position: absolute;
-  display: none;
-  z-index: 4;
+  top: 35%;
+  left: -15%;
+  z-index: 5;
+  width: 28%;
+  height: auto;
 }
 
 .about-images__icon {
@@ -469,15 +500,15 @@ a {
 }
 
 .nft-bids__container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0px auto;
 }
 
 .bids__left {
@@ -700,6 +731,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 20px;
 }
 
 .top-collections__items {
@@ -744,4 +776,205 @@ a {
 
 .top-collections__items:nth-child(3n+2) .bid-percentage {
   color: red;
+}
+
+.featured {
+  padding-bottom: 50px;
+  margin-bottom: 500px;
+}
+
+.featured-container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured-left {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: calc(50% - 30px);
+  gap: 3.25rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.featured-right {
+  position: relative;
+  max-width: calc(50% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.featured-header {
+  max-width: 20rem;
+  font-size: 2rem;
+  font-family: Integral CF;
+  font-weight: 700;
+}
+
+.featured-text {
+  color: #636363;
+  font-size: 1.125rem;
+  font-family: DM Sans;
+  line-height: 1.5;
+}
+
+.featured-image-1 {
+  width: 100%;
+  height: auto;
+}
+
+.featured-image-2 {
+  width: 60%;
+}
+
+.featured-photo-1 {
+  position: absolute;
+  width: 33%;
+  top: 45%;
+  right: -12%;
+}
+
+.featured-photo-2 {
+  position: absolute;
+  width: 33%;
+  bottom: -5%;
+  right: -12%;
+}
+
+.featured-photo-3 {
+  position: absolute;
+  display: none;
+}
+
+.featured__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.25rem 2.5rem;
+  width: 33%;
+}
+
+.more-nfts__container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.more-nfts-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.more-nfts-header__text {
+  font-size: 2.125rem;
+  font-family: Integral CF;
+  font-weight: 700;
+}
+
+.more-nfts-heaver__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.more-nfts-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 0.75rem;
+}
+
+.more-nfts__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+  font-size: 0.875rem;
+  font-family: DM Sans;
+  font-weight: 500;
+}
+
+.more-nfts__button2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.875rem;
+  font-family: DM Sans;
+  font-weight: 500;
+  color: black;
+  background: rgba(220, 220, 220, 0.2);
+  border: 0px;
+}
+
+.more-nfts-header__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 0.625rem 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #371C87;
+  background: rgba(220, 220, 220, 0.2);
+  border: 0px;
+}
+
+.filter-menu {
+  background-color: black;
+  border: 1px solid black;
+  width: 20px;
 }

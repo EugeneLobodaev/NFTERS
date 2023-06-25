@@ -1,0 +1,73 @@
+.more-nfts {}
+
+.more-nfts__container {
+    @include container;
+}
+
+.more-nfts-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.more-nfts-header__text {
+    font-size: 2.125rem;
+    font-family: Integral CF;
+    font-weight: 700;
+}
+
+.more-nfts-heaver__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.more-nfts-header__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 0.75rem;
+}
+
+.more-nfts-header__items {}
+
+.more-nfts__button {
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-family: DM Sans;
+    font-weight: 500;
+}
+
+.more-nfts__button2 {
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: DM Sans;
+    font-weight: 500;
+    color: black;
+    background: rgba(220, 220, 220, 0.20);
+    border: 0px;
+}
+
+.more-nfts-header__filter {
+    display: flex;
+    gap: 10px;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: #371C87;
+    background: rgba(220, 220, 220, 0.20);
+    border: 0px;
+}
+
+.filter-menu {
+    background-color: black;
+    border: 1px solid black;
+    width: 20px;
+}

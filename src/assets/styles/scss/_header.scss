@@ -1,16 +1,18 @@
 .header {
     display: flex;
-    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
     background-color: white;
     padding: 20px 0px;
     border-bottom: 1px solid var(--border-color-1);
 }
 
 .nav {
+    @include container;
     display: flex;
-    width: 1170px;
     align-items: center;
-    padding: 0 15px;
 }
 
 .nav-menu {

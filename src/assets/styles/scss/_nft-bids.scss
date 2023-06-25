@@ -3,12 +3,10 @@
 }
 
 .nft-bids__container {
+    @include container;
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0px auto;
 }
 
 .bids__left {
@@ -181,6 +179,7 @@
 .bids-warper--right {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 .top-collections__items {
