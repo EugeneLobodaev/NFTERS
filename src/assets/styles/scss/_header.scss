@@ -12,19 +12,21 @@
 .nav {
     @include container;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 2rem;
     align-items: center;
+    justify-content: space-between;
     padding: 0;
+    margin-right: 10px;
 }
 
 .logo {
-    font-family: "Bebas Neue", serif;
+    font-family: Integral CF;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
@@ -33,7 +35,7 @@
 }
 
 .nav-menu__item {
-    font-family: "Roboto Condensed", serif;
+    font-family: DM Sans;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;

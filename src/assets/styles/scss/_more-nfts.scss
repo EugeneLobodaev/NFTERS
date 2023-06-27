@@ -28,13 +28,11 @@
 
 .more-nfts-header__list {
     display: flex;
+    width: 100%;
     list-style: none;
     padding: 0;
     gap: 0.75rem;
 }
-
-.more-nfts-header__items {}
-
 .more-nfts__button {
     display: flex;
     padding: 0.625rem 1.25rem;
@@ -78,10 +76,10 @@
 
 .more-nfts__cards {
     display: grid;
+    justify-content: center;
     row-gap: 20px;
     column-gap: 20px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
     padding-top: 40px;
     padding-bottom: 40px;
 
@@ -148,8 +146,8 @@
 .card__bottom {
     z-index: 10;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
+    gap: 2rem;
     padding: 0.75rem 0.5rem;
 }
 
@@ -203,85 +201,4 @@
     z-index: 1;
     left: 5%;
     bottom: -7%;
-}
-
-
-.cards__item-1 {
-    grid-column: 1/4;
-    grid-row: 1/5;
-}
-
-.cards__item-2 {
-    grid-column: 4/7;
-    grid-row: 1/5;
-}
-
-.cards__item-3 {
-    grid-column: 7/10;
-    grid-row: 1/5;
-}
-
-.cards__item-4 {
-    grid-column: 10/13;
-    grid-row: 1/5;
-}
-
-.cards__item-5 {
-    grid-column: 1/4;
-    grid-row: 5/9;
-}
-
-.cards__item-6 {
-    grid-column: 4/7;
-    grid-row: 5/9;
-}
-
-.cards__item-7 {
-    grid-column: 7/10;
-    grid-row: 5/9;
-}
-
-.cards__item-8 {
-    grid-column: 10/13;
-    grid-row: 5/9;
-}
-
-.cards__item-9 {
-    grid-column: 1/4;
-    grid-row: 9/13;
-}
-
-.cards__item-10 {
-    grid-column: 4/7;
-    grid-row: 9/13;
-}
-
-.cards__item-11 {
-    grid-column: 7/10;
-    grid-row: 9/13;
-}
-
-.cards__item-12 {
-    grid-column: 10/13;
-    grid-row: 9/13;
-}
-
-.cards__item-13 {
-    grid-column: 1/4;
-    grid-row: 13/17;
-}
-
-.cards__item-14 {
-    grid-column: 4/7;
-    grid-row: 13/17;
-}
-
-.cards__item-15 {
-    grid-column: 7/10;
-    grid-row: 13/17;
-}
-
-.cards__item-16 {
-    grid-column: 10/13;
-    grid-row: 13/17;
 }

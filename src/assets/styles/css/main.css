@@ -5,6 +5,16 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 414px) {
+  html {
+    font-size: 12px;
+  }
+}
 
 body {
   font-size: 0px;
@@ -15,6 +25,26 @@ body {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+  src: url("/src/assets/fonts/averta_demo_pe_cutted_demo_regular.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("/src/assets/fonts/DMSans-Bold.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("/src/assets/fonts/DMSans-Medium.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("/src/assets/fonts/DMSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("/src/assets/fonts/IntegralCFRegular.ttf");
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -81,9 +111,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .nav-menu {
@@ -91,15 +120,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
+  margin-right: 10px;
 }
 
 .logo {
-  font-family: "Bebas Neue", serif;
+  font-family: Integral CF;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
@@ -107,7 +140,7 @@ a {
 }
 
 .nav-menu__item {
-  font-family: "Roboto Condensed", serif;
+  font-family: DM Sans;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -162,6 +195,7 @@ a {
   padding-top: 0;
   padding-bottom: 65px;
   margin-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .about__container {
@@ -182,12 +216,12 @@ a {
   -ms-flex-negative: 1;
       flex-shrink: 1;
   z-index: 1;
-  width: calc(50% - 30px);
+  width: 70%;
   margin-right: 95px;
 }
 
 .about-info__header {
-  font-family: "Bebas Neue", serif;
+  font-family: Integral CF;
   font-size: 3rem;
   font-weight: 400;
   text-align: left;
@@ -197,7 +231,7 @@ a {
 }
 
 .about-info__paragraph {
-  font-family: "Roboto Condensed", serif;
+  font-family: DM Sans;
   color: #565656;
   font-size: 1.5rem;
   font-weight: 400;
@@ -209,7 +243,7 @@ a {
 }
 
 .about-info__stats {
-  font-family: "Bebas Neue", serif;
+  font-family: Integral CF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,8 +283,6 @@ a {
 .about-images {
   width: calc(50% - 30px);
   position: relative;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,11 +335,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 0;
+  left: 2%;
+  bottom: 12%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 70%;
+  width: 65%;
   border: 0px solid transparent;
   margin-bottom: 23px;
   border-radius: 20px;
@@ -318,10 +351,6 @@ a {
 
 .about-images__stats--left {
   padding-left: 20px;
-}
-
-.about-images__stats--right {
-  position: relative;
 }
 
 .about-images__bid {
@@ -494,7 +523,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -540,7 +569,7 @@ a {
 }
 
 .profile-name {
-  font-family: "Roboto Condensed", serif;
+  font-family: DM Sans;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
@@ -548,7 +577,7 @@ a {
 }
 
 .stock {
-  font-family: "Roboto Condensed", serif;
+  font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.1rem;
@@ -577,14 +606,14 @@ a {
 
 .bid {
   margin: 0;
-  font-family: sans-serif;
+  font-family: DM Sans;
   font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.5;
 }
 
 .bid-value {
-  font-family: serif;
+  font-family: DM Sans;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -611,7 +640,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 1rem;
 }
 
 .bid-placer {
@@ -652,7 +681,7 @@ a {
 }
 
 .bid-name {
-  font-family: serif;
+  font-family: dm sans;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.5;
@@ -688,7 +717,7 @@ a {
 }
 
 .bid-position {
-  font-family: sans-serif;
+  font-family: DM Sans;
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
@@ -701,7 +730,7 @@ a {
 }
 
 .top-collections {
-  font-family: "Roboto Condensed", serif;
+  font-family: DM Sans;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
@@ -710,7 +739,7 @@ a {
 }
 
 .top-collections__subtext {
-  font-family: sans-serif;
+  font-family: DM Sans;
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -752,7 +781,7 @@ a {
 }
 
 .bidder-name {
-  font-family: sans-serif;
+  font-family: DM Sans;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -776,7 +805,7 @@ a {
 }
 
 .bid-percentage {
-  font-family: sans-serif;
+  font-family: DM Sans;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.5;
@@ -1026,6 +1055,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   list-style: none;
   padding: 0;
   gap: 0.75rem;
@@ -1092,12 +1122,14 @@ a {
 
 .more-nfts__cards {
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   row-gap: 20px;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -1184,10 +1216,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
   padding: 0.75rem 0.5rem;
 }
 
@@ -1246,86 +1278,6 @@ a {
   z-index: 1;
   left: 5%;
   bottom: -7%;
-}
-
-.cards__item-1 {
-  grid-column: 1/4;
-  grid-row: 1/5;
-}
-
-.cards__item-2 {
-  grid-column: 4/7;
-  grid-row: 1/5;
-}
-
-.cards__item-3 {
-  grid-column: 7/10;
-  grid-row: 1/5;
-}
-
-.cards__item-4 {
-  grid-column: 10/13;
-  grid-row: 1/5;
-}
-
-.cards__item-5 {
-  grid-column: 1/4;
-  grid-row: 5/9;
-}
-
-.cards__item-6 {
-  grid-column: 4/7;
-  grid-row: 5/9;
-}
-
-.cards__item-7 {
-  grid-column: 7/10;
-  grid-row: 5/9;
-}
-
-.cards__item-8 {
-  grid-column: 10/13;
-  grid-row: 5/9;
-}
-
-.cards__item-9 {
-  grid-column: 1/4;
-  grid-row: 9/13;
-}
-
-.cards__item-10 {
-  grid-column: 4/7;
-  grid-row: 9/13;
-}
-
-.cards__item-11 {
-  grid-column: 7/10;
-  grid-row: 9/13;
-}
-
-.cards__item-12 {
-  grid-column: 10/13;
-  grid-row: 9/13;
-}
-
-.cards__item-13 {
-  grid-column: 1/4;
-  grid-row: 13/17;
-}
-
-.cards__item-14 {
-  grid-column: 4/7;
-  grid-row: 13/17;
-}
-
-.cards__item-15 {
-  grid-column: 7/10;
-  grid-row: 13/17;
-}
-
-.cards__item-16 {
-  grid-column: 10/13;
-  grid-row: 13/17;
 }
 
 .footer {
@@ -1451,7 +1403,7 @@ a {
   color: #363639;
   font-size: 0.875rem;
   font-family: DM Sans;
-  line-height: 1.6;
+  line-height: 160%;
 }
 
 .email__form {
