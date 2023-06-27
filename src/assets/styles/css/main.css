@@ -28,23 +28,23 @@ body {
 
 @font-face {
   font-family: "Averta Demo PE Cutted Demo";
-  src: url("/src/assets/fonts/averta_demo_pe_cutted_demo_regular.ttf");
+  src: url("../fonts/averta_demo_pe_cutted_demo_regular.ttf");
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("/src/assets/fonts/DMSans-Bold.ttf");
+  src: url("../fonts/DMSans-Bold.ttf");
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("/src/assets/fonts/DMSans-Medium.ttf");
+  src: url("../fonts/DMSans-Medium.ttf");
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("/src/assets/fonts/DMSans-Regular.ttf");
+  src: url("../fonts/DMSans-Regular.ttf");
 }
 @font-face {
   font-family: "Integral CF";
-  src: url("/src/assets/fonts/IntegralCFRegular.ttf");
+  src: url("../fonts/IntegralCFRegular.ttf");
 }
 a {
   cursor: pointer;
