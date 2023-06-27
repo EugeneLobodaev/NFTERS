@@ -1,0 +1,73 @@
+.collection {
+    background-color: rgba(217, 224, 236, 0.20);
+    backdrop-filter: blur(25px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.collection-container {
+    @include container;
+}
+
+.collection-header {
+    color: #000;
+    font-size: 1.75rem;
+    font-family: Integral CF;
+    font-weight: 700;
+}
+
+.collection-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.collection-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-item__images {
+    display: flex;
+    gap: 10px;
+}
+
+.collection-item__image {
+    // width: 100%;
+    // height: auto;
+}
+
+.collection-item__images--vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.collection-name {
+    color: #000;
+    font-size: 1.25rem;
+    font-family: DM Sans;
+    font-weight: 700;
+}
+
+.collection-author__name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #000;
+    font-size: 0.875rem;
+    font-family: DM Sans;
+    font-weight: 500;
+}
+
+.collection-item__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-author__photo {
+    width: 50px;
+}
+
+.collection-button {}

@@ -1,0 +1,115 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    @include container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.left-header {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: Integral CF;
+    font-weight: 700;
+}
+
+.left-text {
+    color: #565656;
+    font-size: 0.875rem;
+    font-family: Averta Demo PE Cutted Demo;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.adress {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: fit-content;
+}
+
+.list-header {
+    color: #000;
+    font-size: 1.125rem;
+    font-family: DM Sans;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.footer-links__list {
+    list-style: none;
+}
+
+.footer-links__items {
+    color: #3D3D3D;
+    font-size: 0.875rem;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 31.5%;
+}
+
+.footer-right__header {
+    color: #000;
+    font-size: 1.125rem;
+    font-family: DM Sans;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.footer-left__text {
+    color: #363639;
+    font-size: 0.875rem;
+    font-family: DM Sans;
+    line-height: 1.6;
+}
+
+.email__form {
+    border-radius: 45.595px;
+    border: 2px solid #F1F1F1;
+    background: #FFF;
+}
+
+.email__input {
+    border: 0px;
+    padding: 10px 20px;
+}
+
+.email_btn {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.copyright__text {
+    color: #A4A4A4;
+    font-size: 0.875rem;
+    font-family: Averta Demo PE Cutted Demo;
+    line-height: 1.6;
+    margin-top: 30px;
+}
