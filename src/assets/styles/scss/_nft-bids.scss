@@ -13,6 +13,7 @@
 .bids__left {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .bids-wrapper__left {
@@ -53,7 +54,6 @@
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 30%;
 }
 
 .bid-header {
@@ -90,6 +90,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin: 0 auto;
 }
 
 .bid-placer {
@@ -155,7 +156,7 @@
 .bids__right {
     padding-left: 30px;
     border-left: 1px solid #F0F0F0;
-    width: calc(100% / 3 - 90px);
+    margin: 0 auto;
 }
 
 .top-collections {
