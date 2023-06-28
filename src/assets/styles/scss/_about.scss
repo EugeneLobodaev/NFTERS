@@ -1,0 +1,236 @@
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 57px;
+    padding-top: 0;
+    padding-bottom: 65px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.about__container {
+    display: flex;
+    @include container;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+
+.about-info {
+    flex-shrink: 1;
+    z-index: 1;
+    padding-left: 70px;
+    width: 70%;
+}
+
+.about-info__header {
+    font-family: Integral CF;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.about-info__paragraph {
+    font-family: DM Sans;
+    color: #565656;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 20;
+}
+
+.about-info__stats {
+    font-family: Integral CF;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.about-info__statitem {
+    position: relative;
+    z-index: 10;
+}
+
+.statitem__number {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+}
+
+.statitem__name {
+    color: #565656;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+}
+
+.about-info__background {
+    position: absolute;
+    z-index: 1;
+    left: -12%;
+    top: 60%;
+}
+
+.about-images {
+    width: calc(100% / 2 - 30px);
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.about-images__header {
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.about-images__profile {
+    position: relative;
+    display: flex;
+    z-index: 10;
+    gap: 10px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.about-images__name {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+
+}
+
+.about-images__stats {
+    display: flex;
+    position: absolute;
+    left: 2%;
+    bottom: 20%;
+    justify-content: space-evenly;
+    width: 65%;
+    border: 0px solid transparent;
+    margin-bottom: 23px;
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    z-index: 10;
+}
+
+.about-images__stats--left {
+    padding-left: 20px;
+}
+
+.about-images__bid {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
+
+.about-images__statvalue {
+    padding-left: 20px;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
+
+.about-images__end {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
+
+.about-images__timer {
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
+
+.about-images--layer3 {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 28%;
+    top: 10%;
+    z-index: 1;
+}
+
+.about-images--layer2 {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    z-index: 2;
+
+}
+
+.about-images--layer1 {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    z-index: 3;
+}
+
+.about-images--compass {
+    position: absolute;
+    top: 25%;
+    left: -12%;
+    z-index: 5;
+    width: 28%;
+    height: auto;
+}
+
+.about-images__icon {
+    position: absolute;
+}
+
+@media screen and (max-width: 1170px) {
+    .about-info {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .about-images {
+        display: none;
+    }
+
+    .about-info {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {}

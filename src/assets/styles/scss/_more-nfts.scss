@@ -1,0 +1,228 @@
+.more-nfts {
+    background-color: #D9E0EC33;
+    padding-top: 40px
+}
+
+.more-nfts__container {
+    @include container;
+}
+
+.more-nfts-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.more-nfts-header__text {
+    font-size: 2.125rem;
+    font-family: Integral CF;
+    font-weight: 700;
+}
+
+.more-nfts-heaver__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.more-nfts-header__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    gap: 0.75rem;
+}
+
+.more-nfts__button {
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-family: DM Sans;
+    font-weight: 500;
+}
+
+.more-nfts__button2 {
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: DM Sans;
+    font-weight: 500;
+    color: black;
+    background: rgba(220, 220, 220, 0.20);
+    border: 0px;
+}
+
+.more-nfts-header__filter {
+    display: flex;
+    gap: 10px;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: #371C87;
+    background: rgba(220, 220, 220, 0.20);
+    border: 0px;
+}
+
+.filter-menu {
+    background-color: black;
+    border: 1px solid black;
+    width: 20px;
+}
+
+.more-nfts__cards {
+    display: grid;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13.165px;
+    border: 1.097px solid rgba(242, 242, 242, 0.50);
+    background-color: #FFF;
+    padding-top: 0.7rem;
+}
+
+.grid-svg__wrapper {
+    position: relative;
+}
+
+.grid__svg {
+    width: 100%;
+    height: auto;
+}
+
+.cards__name {
+    z-index: 10;
+    font-size: 1.23419rem;
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.casrd__values {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 7.17rem;
+    border-bottom: 1px solid #F4F4F4;
+    padding-bottom: 10px;
+}
+
+.price {
+    z-index: 10;
+    display: flex;
+    gap: 5px;
+    color: #00AC4F;
+    font-size: 0.68569rem;
+    font-family: DM Sans;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    color: #838383;
+    text-align: right;
+    font-size: 0.82281rem;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.card__bottom {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0.75rem 0.5rem;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5539A8;
+    font-size: 0.68569rem;
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0.27425rem 0.68569rem;
+    border-radius: 109.706px;
+    background-color: #F5F5F5;
+
+}
+
+.grid-button {
+    padding: 5px 10px;
+    color: #4F33A3;
+    font-size: 0.95994rem;
+    font-family: DM Sans;
+    font-weight: 500;
+    border: 0px;
+}
+
+.nft-user-photo-1 {
+    position: absolute;
+    z-index: 4;
+    left: 32%;
+    bottom: -7%;
+}
+
+.nft-user-photo-2 {
+    position: absolute;
+    z-index: 3;
+    left: 23%;
+    bottom: -7%;
+}
+
+.nft-user-photo-3 {
+    position: absolute;
+    z-index: 2;
+    left: 14%;
+    bottom: -7%;
+}
+
+.nft-user-photo-4 {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    bottom: -7%;
+}
+
+@media screen and (max-width: 1170px) {}
+
+@media screen and (max-width: 980px) {
+    .more-nfts-heaver__nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .more-nfts-header__text {
+        text-align: center;
+    }
+
+    .more-nfts-heaver__nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 640px) {}

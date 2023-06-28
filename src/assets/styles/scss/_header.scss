@@ -1,0 +1,134 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--border-color-1);
+}
+
+.nav {
+    @include container;
+    display: flex;
+    // justify-content: space-around;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 10px;
+}
+
+
+.logo {
+    font-family: Integral CF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #3D00B7;
+
+}
+
+.nav-menu__item {
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.nav-menu__separator {
+    border: 1px solid var(--border-color-1);
+    height: 50px;
+    width: 0;
+    margin: 0 40px;
+}
+
+.search-wrapper {
+    position: relative;
+    margin-left: 80px;
+}
+
+.search__input {
+    background-color: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 100px;
+    padding: 16px 117px 16px 10px;
+}
+
+.search__image {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    right: 8px;
+    bottom: 20%;
+}
+
+.burger-image {
+    width: 30px;
+    height: 25px;
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+
+    .search-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .search-wrapper {
+        display: none;
+        flex-wrap: nowrap;
+    }
+
+    .nav-menu {
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .search-wrapper {
+        display: none;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-menu__separator {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .header {
+        height: 30px;
+    }
+
+    .burger-image {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .burger {
+        right: 50%;
+    }
+}

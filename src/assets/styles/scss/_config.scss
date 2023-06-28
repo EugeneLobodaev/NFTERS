@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+  src: url("../fonts/averta_demo_pe_cutted_demo_regular.ttf");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/IntegralCFRegular.ttf");
+}
+
+@mixin container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
