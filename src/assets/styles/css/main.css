@@ -892,9 +892,14 @@ a {
   .bids__right {
     padding-left: 0px;
     border-left: 0px;
+    width: 100%;
   }
   .top-collections__items {
     margin-left: 0px;
+  }
+  .bids__middle {
+    margin: 0px;
+    width: 100%;
   }
 }
 .collection {
