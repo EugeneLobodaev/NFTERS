@@ -32,11 +32,6 @@
     gap: 10px;
 }
 
-.collection-item__image {
-    // width: 100%;
-    // height: auto;
-}
-
 .collection-item__images--vertical {
     display: flex;
     flex-direction: column;
@@ -71,3 +66,21 @@
 }
 
 .collection-button {}
+
+@media screen and (max-width: 1170px) {
+.collection-container {
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+}

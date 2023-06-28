@@ -109,8 +109,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .nav-menu {
@@ -129,15 +127,6 @@ a {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 1100px) {
-  .nav-menu {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .nav-menu__item:nth-child(4) {
-    display: none;
-  }
-}
 .logo {
   font-family: Integral CF;
   font-size: 1.5rem;
@@ -178,10 +167,46 @@ a {
   background-color: transparent;
   border: 0px;
   position: absolute;
-  left: 88%;
+  right: 8px;
   bottom: 20%;
 }
 
+@media screen and (max-width: 1170px) {
+  .nav-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .search-wrapper {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .search-wrapper {
+    display: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .nav-menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 980px) {
+  .search-wrapper {
+    display: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 640px) {
+  .nav-menu {
+    display: none;
+  }
+  .header {
+    height: 30px;
+  }
+}
 :root {
   --button-color-1: #3D00B7;
   --button-color-1--hover: #2c0a70;
@@ -217,11 +242,6 @@ a {
   margin-top: 90px;
 }
 
-@media (max-width: 1100px) {
-  .about-images {
-    display: none;
-  }
-}
 .about-info {
   -ms-flex-negative: 1;
       flex-shrink: 1;
@@ -435,6 +455,14 @@ a {
   position: absolute;
 }
 
+@media screen and (max-width: 980px) {
+  .about-images {
+    display: none;
+  }
+  .about-info {
+    margin: 0 auto;
+  }
+}
 .nft-world {
   background-color: rgba(217, 224, 236, 0.2);
   padding: 50px 0;
@@ -922,6 +950,11 @@ a {
   width: 50px;
 }
 
+@media screen and (max-width: 1170px) {
+  .collection-container {
+    margin: 0 auto;
+  }
+}
 .featured {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -1291,6 +1324,15 @@ a {
   bottom: -7%;
 }
 
+@media screen and (max-width: 980px) {
+  .more-nfts-heaver__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .footer {
   padding-top: 50px;
   padding-bottom: 20px;
