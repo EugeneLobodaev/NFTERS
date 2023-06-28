@@ -18,6 +18,7 @@
     max-width: calc(100% / 2 - 30px);
     gap: 3.25rem;
     align-items: end;
+    padding-left: 2rem;
 
 }
 
@@ -75,4 +76,28 @@
     justify-content: center;
     padding: 1.25rem 2.5rem;
     width: 33%;
+}
+
+@media screen and (max-width: 1170px) {
+    .featured__button {
+        font-size: 1rem;
+        padding: 16px 26px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .featured__button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 640px) {
+    .featured__button {
+        font-size: 14px;
+        padding: 15px 10px;
+        width: 120px;
+    }
 }

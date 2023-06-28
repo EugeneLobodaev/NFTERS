@@ -28,6 +28,7 @@
 
 .more-nfts-header__list {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     list-style: none;
     padding: 0;
@@ -211,8 +212,15 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .more-nfts-header__text {
+        text-align: center;
+    }
+    .more-nfts-heaver__nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 980px) {}
 
-@media screen and (max-width: 515px) {}
+@media screen and (max-width: 640px) {}

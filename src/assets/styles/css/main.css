@@ -954,11 +954,6 @@ a {
   width: 50px;
 }
 
-@media screen and (max-width: 1170px) {
-  .collection-container {
-    margin: 0 auto;
-  }
-}
 .featured {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -994,6 +989,7 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  padding-left: 2rem;
 }
 
 .featured-right {
@@ -1061,6 +1057,25 @@ a {
   width: 33%;
 }
 
+@media screen and (max-width: 1170px) {
+  .featured__button {
+    font-size: 1rem;
+    padding: 16px 26px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .featured__button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .featured__button {
+    font-size: 14px;
+    padding: 15px 10px;
+    width: 120px;
+  }
+}
 .more-nfts {
   background-color: rgba(217, 224, 236, 0.2);
   padding-top: 40px;
@@ -1103,6 +1118,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   list-style: none;
   padding: 0;
@@ -1329,6 +1346,16 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .more-nfts-heaver__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .more-nfts-header__text {
+    text-align: center;
+  }
   .more-nfts-heaver__nav {
     display: -webkit-box;
     display: -ms-flexbox;
