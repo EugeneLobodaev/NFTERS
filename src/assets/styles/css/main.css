@@ -874,12 +874,16 @@ a {
   font-size: 1.75rem;
   font-family: Integral CF;
   font-weight: 700;
+  text-align: center;
 }
 
 .collection-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;

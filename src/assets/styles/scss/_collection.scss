@@ -7,6 +7,7 @@
 
 .collection-container {
     @include container;
+   
 }
 
 .collection-header {
@@ -14,12 +15,16 @@
     font-size: 1.75rem;
     font-family: Integral CF;
     font-weight: 700;
+    text-align: center;
+    
 }
 
 .collection-cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    
 }
 
 .collection-item {
@@ -65,7 +70,6 @@
     width: 50px;
 }
 
-.collection-button {}
 
 @media screen and (max-width: 1170px) {
 .collection-container {
