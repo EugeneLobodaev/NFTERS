@@ -6,7 +6,7 @@
 
 .nft-world__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     @include container;
 }
 
@@ -49,8 +49,6 @@
 }
 
 .nft-world__right {
-
-    flex-shrink: 1;
     width: calc(100% / 3 - 30px);
 }
 
@@ -69,6 +67,7 @@
     font-weight: 400;
     line-height: 1.5;
 }
+
 .nft-world__image {
     margin-right: 5px;
 }

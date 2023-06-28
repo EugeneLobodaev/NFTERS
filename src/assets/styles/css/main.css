@@ -501,9 +501,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
@@ -551,8 +550,6 @@ a {
 }
 
 .nft-world__right {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
   width: calc(33.3333333333% - 30px);
 }
 
