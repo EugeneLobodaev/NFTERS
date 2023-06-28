@@ -70,6 +70,12 @@
     bottom: 20%;
 }
 
+.burger-image {
+    width: 30px;
+    height: 25px;
+    display: none;
+}
+
 @media screen and (max-width: 1170px) {
     .nav-menu {
         flex-wrap: wrap;
@@ -85,6 +91,7 @@
         display: none;
         flex-wrap: nowrap;
     }
+
     .nav-menu {
         justify-content: space-around;
         margin: 0 auto;
@@ -100,10 +107,28 @@
 }
 
 @media screen and (max-width: 640px) {
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-menu__separator {
+        display: none;
+    }
+
     .nav-menu {
         display: none;
     }
+
     .header {
         height: 30px;
+    }
+
+    .burger-image {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .burger {
+        right: 50%;
     }
 }

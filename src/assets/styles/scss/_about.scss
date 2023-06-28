@@ -214,12 +214,17 @@
     position: absolute;
 }
 
-@media screen and (max-width: 1170px) {}
+@media screen and (max-width: 1170px) {
+    .about-info {
+        padding-left: 0;
+    }
+}
 
 @media screen and (max-width: 980px) {
     .about-images {
         display: none;
     }
+
     .about-info {
         margin: 0 auto;
     }

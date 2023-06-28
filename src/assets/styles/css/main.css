@@ -171,6 +171,12 @@ a {
   bottom: 20%;
 }
 
+.burger-image {
+  width: 30px;
+  height: 25px;
+  display: none;
+}
+
 @media screen and (max-width: 1170px) {
   .nav-menu {
     -ms-flex-wrap: wrap;
@@ -200,11 +206,28 @@ a {
   }
 }
 @media screen and (max-width: 640px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-menu__separator {
+    display: none;
+  }
   .nav-menu {
     display: none;
   }
   .header {
     height: 30px;
+  }
+  .burger-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .burger {
+    right: 50%;
   }
 }
 :root {
@@ -455,6 +478,11 @@ a {
   position: absolute;
 }
 
+@media screen and (max-width: 1170px) {
+  .about-info {
+    padding-left: 0;
+  }
+}
 @media screen and (max-width: 980px) {
   .about-images {
     display: none;
@@ -507,6 +535,12 @@ a {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nft-world__paragaph--middle {
@@ -517,7 +551,6 @@ a {
 }
 
 .nft-world__right {
-  position: relative;
   -ms-flex-negative: 1;
       flex-shrink: 1;
   width: calc(33.3333333333% - 30px);
@@ -528,6 +561,12 @@ a {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nft-world__paragraph--right {
@@ -537,16 +576,8 @@ a {
   line-height: 1.5;
 }
 
-.nft-world__image--middle {
-  position: absolute;
-  top: 10%;
-  left: -13%;
-}
-
-.nft-world__image--right {
-  position: absolute;
-  top: 10%;
-  left: -13%;
+.nft-world__image {
+  margin-right: 5px;
 }
 
 .nft-bids {
@@ -855,6 +886,11 @@ a {
   color: red;
 }
 
+@media screen and (max-width: 1170px) {
+  .nft-bids__image {
+    width: 100%;
+  }
+}
 .collection {
   background-color: rgba(217, 224, 236, 0.2);
   -webkit-backdrop-filter: blur(25px);
@@ -1391,8 +1427,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -1513,4 +1547,96 @@ a {
   font-family: Averta Demo PE Cutted Demo;
   line-height: 1.6;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+  .email__form {
+    border: 0px;
+  }
+  .form-wrapper {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left-text {
+    margin-bottom: 20px;
+  }
+  .adress {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3px;
+    margin-bottom: 20px;
+  }
+  .footer-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    padding: 0;
+  }
+  .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+  }
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+  .footer-links__list {
+    padding: 0;
+  }
+  .email_btn {
+    padding: 10px 80px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .form-wrapper {
+    text-align: center;
+  }
+  .email__form {
+    border: 0px;
+  }
 }

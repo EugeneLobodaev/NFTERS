@@ -35,6 +35,8 @@
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -47,7 +49,7 @@
 }
 
 .nft-world__right {
-    position: relative;
+
     flex-shrink: 1;
     width: calc(100% / 3 - 30px);
 }
@@ -57,6 +59,8 @@
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
 }
 
 .nft-world__paragraph--right {
@@ -65,16 +69,6 @@
     font-weight: 400;
     line-height: 1.5;
 }
-
-.nft-world__image--middle {
-    position: absolute;
-    top: 10%;
-    left: -13%;
-
-}
-
-.nft-world__image--right {
-    position: absolute;
-    top: 10%;
-    left: -13%;
+.nft-world__image {
+    margin-right: 5px;
 }

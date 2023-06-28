@@ -11,7 +11,6 @@
 .footer-container {
     @include container;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -112,4 +111,76 @@
     font-family: Averta Demo PE Cutted Demo;
     line-height: 1.6;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+    .email__form {
+        border: 0px;
+    }
+
+    .form-wrapper {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left-text {
+        margin-bottom: 20px;
+    }
+
+    .adress {
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        margin-bottom: 20px;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    .footer-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
+    .footer-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        gap: 5px;
+        margin-bottom: 30px;
+    }
+
+    .footer-links__list {
+        padding: 0;
+    }
+
+    .email_btn {
+        padding: 10px 80px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .form-wrapper {
+        text-align: center;
+    }
+
+    .email__form {
+        border: 0px;
+    }
 }
